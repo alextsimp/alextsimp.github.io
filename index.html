@@ -19,6 +19,12 @@
             --tag-text: #1d4ed8;
         }
 
+        /* Enable native smooth scrolling and offset for the sticky nav */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 70px; /* Offset so nav doesn't cover section headers */
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             color: var(--text-main);
@@ -30,9 +36,9 @@
 
         .container {
             max-width: 1100px;
-            margin: 40px auto;
+            margin: 0 auto 40px auto; /* Removed top margin to allow header to sit flush */
             background: var(--bg-card);
-            border-radius: 12px;
+            border-radius: 0 0 12px 12px;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
             overflow: hidden;
         }
@@ -80,6 +86,44 @@
             text-decoration: underline;
         }
 
+        /* Sticky Navigation Bar */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.85); /* Slightly transparent white */
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            padding: 15px 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .sticky-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .sticky-nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .sticky-nav a:hover {
+            color: var(--secondary-color);
+        }
+
         .content {
             padding: 40px;
         }
@@ -99,11 +143,11 @@
             gap: 10px;
         }
 
-        ul {
+        .content ul {
             padding-left: 20px;
         }
 
-        li {
+        .content li {
             margin-bottom: 10px;
         }
 
@@ -188,10 +232,25 @@
             .entry-header {
                 flex-direction: column;
             }
+            .sticky-nav ul {
+                gap: 15px;
+                font-size: 0.85rem;
+            }
         }
     </style>
 </head>
 <body>
+
+<nav class="sticky-nav">
+    <ul>
+        <li><a href="#summary"><i class="fa-solid fa-user"></i> Summary</a></li>
+        <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+        <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-flask"></i> Projects</a></li>
+        <li><a href="#publications"><i class="fa-solid fa-book-open"></i> Publications</a></li>
+    </ul>
+</nav>
 
 <div class="container">
     <header>
@@ -208,10 +267,10 @@
         <section id="summary">
             <h3><i class="fa-solid fa-user-tie"></i> Professional Summary</h3>
             <ul>
-                <li>R&D Engineer with 8+ years of experience in energy systems and computational fluid dynamics[cite: 1].</li>
-                <li>Skilled in developing high-performance computational codes (FORTRAN, Python, MATLAB) and conducting advanced simulations[cite: 2].</li>
-                <li>Published 10+ peer-reviewed articles, including 7 as first author[cite: 3].</li>
-                <li>Coordinated technical activities for EU Horizon projects, utilizing engineering methodologies and advanced technologies to enhance energy systems' performance[cite: 4].</li>
+                <li>R&D Engineer with 8+ years of experience in energy systems and computational fluid dynamics[cite: 1, 6].</li>
+                <li>Skilled in developing high-performance computational codes (FORTRAN, Python, MATLAB) and conducting advanced simulations[cite: 2, 8].</li>
+                <li>Published 10+ peer-reviewed articles, including 7 as first author[cite: 3, 6].</li>
+                <li>Coordinated technical activities for EU Horizon projects, utilizing engineering methodologies and advanced technologies to enhance energy systems' performance[cite: 4, 6].</li>
                 <li>Proficient in thermal systems, renewable energy design, and energy efficiency in buildings[cite: 5].</li>
             </ul>
         </section>
@@ -224,7 +283,7 @@
                     <div class="entry-title">Research Associate</div>
                     <div class="entry-date">05/2023 – Present</div>
                 </div>
-                <div class="entry-subtitle">CPERI, CERTH, Athens, Greece [cite: 13]</div>
+                <div class="entry-subtitle">CPERI, CERTH, Athens, Greece</div>
                 <ul>
                     <li>Modelling of a novel thermal storage system in ASPEN and MATLAB/SIMULINK[cite: 14].</li>
                     <li>Performed BIM and process modeling using TRNSYS to design sustainable energy solutions[cite: 14].</li>
@@ -253,7 +312,7 @@
                     <div class="entry-title">Research Associate</div>
                     <div class="entry-date">09/2021 – 04/2023</div>
                 </div>
-                <div class="entry-subtitle">INRASTES, NCSR Demokritos, Greece [cite: 20]</div>
+                <div class="entry-subtitle">INRASTES, NCSR Demokritos, Greece</div>
                 <ul>
                     <li>Development of an in-house computational fluid particle dynamics code[cite: 21].</li>
                     <li>Simulation of aerosol flows with ANSYS FLUENT[cite: 21].</li>
@@ -268,7 +327,7 @@
                     <div class="entry-title">Postdoc Researcher</div>
                     <div class="entry-date">04/2020 – 08/2021</div>
                 </div>
-                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece [cite: 22]</div>
+                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece</div>
                 <ul>
                     <li>Modelling microfluidics flows with in-house kinetic codes[cite: 23].</li>
                     <li>Simulation of the oscillatory gas flow in comb finger blocks with COMSOL[cite: 23].</li>
@@ -282,7 +341,7 @@
                     <div class="entry-title">PhD Candidate</div>
                     <div class="entry-date">2016 – 03/2020</div>
                 </div>
-                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece [cite: 24]</div>
+                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece</div>
                 <ul>
                     <li>Development of deterministic (DVM) and stochastic (DSMC) kinetic codes applied in rarefied gas dynamics[cite: 25].</li>
                     <li>Development, debugging and profiling of parallel codes for high-performance computer (HPC) systems using MPI or OpenMP[cite: 25].</li>
@@ -301,7 +360,7 @@
                     <div class="entry-title">Ph.D. in Computational Fluid Dynamics</div>
                     <div class="entry-date">2016 – 2020</div>
                 </div>
-                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece [cite: 27]</div>
+                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece</div>
                 <p><strong>Thesis title:</strong> <em>Rarefied oscillatory and pulsatile gas flows in capillaries and enclosures with applications in vacuum technology and microfluidics</em>[cite: 27].</p>
             </div>
 
@@ -310,7 +369,7 @@
                     <div class="entry-title">M.Sc. in Mechanical Engineering (ECTS: 60)</div>
                     <div class="entry-date">2014 – 2015</div>
                 </div>
-                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece [cite: 28]</div>
+                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece</div>
                 <p><strong>GPA:</strong> 9.13/10 [cite: 28]</p>
                 <p><strong>Thesis title:</strong> <em>Numerical investigation of the shock wave structure with kinetic and continuum models</em>[cite: 28].</p>
             </div>
@@ -320,7 +379,7 @@
                     <div class="entry-title">Diploma in Mechanical Engineering (ECTS: 300)</div>
                     <div class="entry-date">2008 – 2014</div>
                 </div>
-                <div class="entry-subtitle">Department of Mechanical Engineering, Aristotle University of Thessaloniki, Greece [cite: 29]</div>
+                <div class="entry-subtitle">Department of Mechanical Engineering, Aristotle University of Thessaloniki, Greece</div>
                 <p><strong>GPA:</strong> 6.82/10 [cite: 29]</p>
                 <p><strong>Thesis title:</strong> <em>Calculation of Heating and Cooling Degree-days from records of meteorological stations in the greater metropolitan area of Thessaloniki</em>[cite: 29].</p>
             </div>
@@ -334,7 +393,7 @@
                 <div class="tags">
                     <span class="tag">FORTRAN</span>
                     <span class="tag">MATLAB</span>
-                    <span class="tag">PYTHON</span> [cite: 8]
+                    <span class="tag">PYTHON</span>
                 </div>
             </div>
             
@@ -343,7 +402,7 @@
                 <div class="tags">
                     <span class="tag">MPI</span>
                     <span class="tag">OPENMP</span>
-                    <span class="tag">OPENACC</span> [cite: 8]
+                    <span class="tag">OPENACC</span>
                 </div>
             </div>
 
@@ -352,7 +411,7 @@
                 <div class="tags">
                     <span class="tag">COMSOL Fluid Flow</span>
                     <span class="tag">TRNSYS</span>
-                    <span class="tag">ANSYS FLUENT</span> [cite: 8]
+                    <span class="tag">ANSYS FLUENT</span>
                 </div>
             </div>
 
@@ -365,7 +424,7 @@
                     <span class="tag">AutoCAD</span>
                     <span class="tag">Git</span>
                     <span class="tag">LaTeX</span>
-                    <span class="tag">Linux Shell Scripting</span> [cite: 8, 9]
+                    <span class="tag">Linux Shell Scripting</span>
                 </div>
             </div>
             
@@ -374,7 +433,7 @@
                 <div class="tags">
                     <span class="tag">Greek (Native)</span>
                     <span class="tag">English (C2)</span>
-                    <span class="tag">French (B2)</span> [cite: 9]
+                    <span class="tag">French (B2)</span>
                 </div>
             </div>
         </section>
@@ -382,7 +441,7 @@
         <section id="projects">
             <h3><i class="fa-solid fa-flask"></i> Projects & Grants</h3>
             <ul>
-                <li><strong>2023 – 2025:</strong> RE-WITCH - Renewable and Waste heat valorisation in Industries via Technologies for Cooling production and energy Harvesting (Grant Agreement No. 101138697)[cite: 46, 47].</li>
+                <li><strong>2023 – 2025:</strong> RE-WITCH - Renewable and Waste heat valorisation in Industries via Technologies for Cooling production and energy Harvesting (Grant Agreement No. 101138697)[cite: 47].</li>
                 <li><strong>2023 – 2025:</strong> RESPONSE - integRatEd Solutions for POsitive eNergy and reSilient citiEs (Grant Agreement No. 957751)[cite: 47].</li>
                 <li><strong>2023 – 2025:</strong> THUMBSUP - THermal energy storage solUtions to optimally Manage BuildingS and Unlock their grid balancing and flexibility Potential (Grant Agreement No. 101096921)[cite: 47].</li>
                 <li><strong>2023 – 2025:</strong> MINISTOR - Minimal Size Thermal and Electrical Energy Storage System for In-Situ Residential Installation (Grant Agreement No. 869821)[cite: 47].</li>
@@ -397,12 +456,12 @@
             
             <div class="publication">
                 <strong>Optimizing the performance of a novel compact integrated thermal storage system (MiniStor) under diverse climate conditions</strong><br>
-                <em>Alexandros Tsimpoukis, Georgios Martinopoulos, Nikolaos Nikolopoulos</em> | Green Energy and Sustainability (2025)[cite: 105].
+                <em>Alexandros Tsimpoukis, Georgios Martinopoulos, Nikolaos Nikolopoulos</em> | Green Energy and Sustainability (2025)[cite: 100, 105].
             </div>
 
             <div class="publication">
                 <strong>A Comprehensive Approach to Nearly Zero Energy Buildings and Districts: Analysis of a Region Undergoing Energy Transition</strong><br>
-                <em>Georgios Martinopoulos, Alexandros Tsimpoukis, et al.</em> | Energies (2024)[cite: 98].
+                <em>Georgios Martinopoulos, Alexandros Tsimpoukis, et al.</em> | Energies (2024)[cite: 93, 98].
             </div>
 
             <div class="publication">
@@ -417,7 +476,7 @@
 
             <div class="publication">
                 <strong>Performance optimization of a solar adsorption chiller by dynamically adjusting the half-cycle time</strong><br>
-                <em>Thanasis Basdanis, Alexandros Tsimpoukis, Dimitris Valougeorgis</em> | Renewable Energy (2021)[cite: 69, 70].
+                <em>Thanasis Basdanis, Alexandros Tsimpoukis, Dimitris Valougeorgis</em> | Renewable Energy (2021)[cite: 70].
             </div>
             
             <p><em>Note: This is a selection of journal articles. For a full list of over 10 peer-reviewed journal articles and numerous conference proceedings, please refer to my full academic profile[cite: 3].</em></p>
@@ -426,7 +485,7 @@
         <section id="miscellaneous">
             <h3><i class="fa-solid fa-award"></i> Awards & Teaching Experience</h3>
             <ul>
-                <li><strong>Award (2019):</strong> IUVSTA – Elsevier Student Award. 21st International Vacuum Congress, Malmo, Sweden[cite: 12].</li>
+                <li><strong>Award (2019):</strong> IUVSTA – Elsevier Student Award. 21st International Vacuum Congress, Malmo, Sweden[cite: 10, 12].</li>
                 <li><strong>Teaching (2023-2024):</strong> Energy and Climate Change, MSc Energy and Finance, International Hellenic University[cite: 13].</li>
                 <li><strong>Teaching Assistant (2017-2023):</strong> Solar Thermal Systems (MATLAB & TRNSYS support, tutorial design)[cite: 13].</li>
                 <li><strong>Teaching Assistant:</strong> Introduction to Computer Programming (2018), Numerical Methods (2016)[cite: 13].</li>

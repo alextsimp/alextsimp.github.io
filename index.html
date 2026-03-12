@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandros Tsimpoukis, Ph.D. - CV</title>
+    <title>Alexandros Tsimpoukis, Ph.D. - R&D Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #1e3a8a; /* Dark Blue */
-            --secondary-color: #2563eb; /* Royal Blue */
+            --primary-color: #0f172a; /* Deeper Slate */
+            --secondary-color: #0284c7; /* Sky Blue */
+            --accent-color: #38bdf8;
             --text-main: #334155;
             --text-muted: #64748b;
             --bg-page: #f8fafc;
             --bg-card: #ffffff;
             --border-color: #e2e8f0;
-            --tag-bg: #eff6ff;
-            --tag-text: #1d4ed8;
+            --tag-bg: #f0f9ff;
+            --tag-text: #0369a1;
         }
 
-        /* Enable native smooth scrolling and offset for the sticky nav */
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 70px; /* Offset so nav doesn't cover section headers */
+            scroll-padding-top: 80px;
         }
 
         body {
@@ -34,76 +34,23 @@
             padding: 0;
         }
 
-        .container {
-            max-width: 1100px;
-            margin: 0 auto 40px auto; /* Removed top margin to allow header to sit flush */
-            background: var(--bg-card);
-            border-radius: 0 0 12px 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
-            overflow: hidden;
-        }
-
-        header {
-            background: var(--primary-color);
-            color: white;
-            padding: 50px 40px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-
-        header h2 {
-            margin: 10px 0 20px;
-            font-size: 1.25rem;
-            font-weight: 400;
-            opacity: 0.9;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.95rem;
-            transition: opacity 0.2s;
-        }
-
-        .contact-info a:hover {
-            opacity: 0.8;
-            text-decoration: underline;
-        }
-
-        /* Sticky Navigation Bar */
+        /* Sticky Navigation */
         .sticky-nav {
             position: sticky;
             top: 0;
-            background: rgba(255, 255, 255, 0.85); /* Slightly transparent white */
-            backdrop-filter: blur(10px); /* Frosted glass effect */
-            -webkit-backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border-color);
             z-index: 1000;
             padding: 15px 20px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
         }
 
         .sticky-nav ul {
             list-style: none;
             display: flex;
-            justify-content: center;
-            gap: 25px;
+            gap: 30px;
             margin: 0;
             padding: 0;
             flex-wrap: wrap;
@@ -111,131 +58,173 @@
 
         .sticky-nav a {
             text-decoration: none;
-            color: var(--text-main);
+            color: var(--primary-color);
             font-weight: 600;
             font-size: 0.95rem;
-            transition: color 0.2s ease-in-out;
-            display: flex;
-            align-items: center;
-            gap: 6px;
+            transition: color 0.2s;
         }
 
         .sticky-nav a:hover {
             color: var(--secondary-color);
         }
 
-        .content {
-            padding: 40px;
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1e293b 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+        }
+
+        .hero h2 {
+            margin: 15px 0 25px;
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--accent-color);
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            color: #cbd5e1;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
 
         section h3 {
             color: var(--primary-color);
-            font-size: 1.5rem;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .content ul {
-            padding-left: 20px;
-        }
-
-        .content li {
-            margin-bottom: 10px;
-        }
-
-        /* Timeline / Entry Styling */
-        .entry {
+            font-size: 1.75rem;
             margin-bottom: 30px;
+            text-align: center;
         }
 
-        .entry-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
-            flex-wrap: wrap;
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
         }
 
-        .entry-title {
-            font-weight: 600;
-            font-size: 1.15rem;
-            color: #0f172a;
+        .project-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .entry-date {
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card i {
+            font-size: 2rem;
             color: var(--secondary-color);
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        .entry-subtitle {
-            font-style: italic;
-            color: var(--text-muted);
-            margin-bottom: 10px;
-        }
-
-        /* Skills Tags */
-        .skills-group {
             margin-bottom: 15px;
         }
-        
-        .skills-group strong {
-            display: block;
-            margin-bottom: 8px;
-            color: #0f172a;
+
+        .project-card h4 {
+            margin: 0 0 10px 0;
+            color: var(--primary-color);
+            font-size: 1.25rem;
         }
 
-        .tags {
+        .project-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .project-card ul {
+            padding-left: 20px;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .tech-stack {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
         }
 
-        .tag {
-            background-color: var(--tag-bg);
+        .tech-tag {
+            background: var(--tag-bg);
             color: var(--tag-text);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
         }
 
-        /* Publications */
-        .publication {
-            margin-bottom: 20px;
-            padding: 15px;
-            background: #f8fafc;
+        /* Skills Matrix */
+        .skills-container {
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h5 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Publications List */
+        .pub-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .pub-item {
+            background: var(--bg-card);
+            padding: 20px;
             border-left: 4px solid var(--secondary-color);
             border-radius: 4px;
-        }
-        
-        .publication strong {
-            color: #0f172a;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
         @media (max-width: 768px) {
-            .container {
-                margin: 0;
-                border-radius: 0;
-            }
-            .content {
-                padding: 20px;
-            }
-            .entry-header {
-                flex-direction: column;
-            }
-            .sticky-nav ul {
-                gap: 15px;
-                font-size: 0.85rem;
-            }
+            .hero h1 { font-size: 2.25rem; }
+            .sticky-nav ul { gap: 15px; justify-content: center; }
         }
     </style>
 </head>
@@ -243,253 +232,157 @@
 
 <nav class="sticky-nav">
     <ul>
-        <li><a href="#summary"><i class="fa-solid fa-user"></i> Summary</a></li>
-        <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
-        <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
-        <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
-        <li><a href="#projects"><i class="fa-solid fa-flask"></i> Projects</a></li>
-        <li><a href="#publications"><i class="fa-solid fa-book-open"></i> Publications</a></li>
+        <li><a href="#portfolio">Featured Projects</a></li>
+        <li><a href="#skills">Tech Arsenal</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#background">Background</a></li>
     </ul>
 </nav>
 
+<div class="hero">
+    <h1>Alexandros Tsimpoukis, Ph.D.</h1>
+    <h2>R&D Engineer | Energy Systems & Computational Fluid Dynamics</h2>
+    <p>Developing high-performance computational codes and utilizing advanced engineering methodologies to optimize the energy systems of tomorrow.</p>
+    <div class="social-links">
+        <a href="mailto:test@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/alexandros-tsimpoukis-a0b58698/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/aelalex/" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+</div>
+
 <div class="container">
-    <header>
-        <h1>Alexandros Tsimpoukis, Ph.D.</h1>
-        <h2>R&D Engineer in Energy Systems & Computational Fluid Dynamics</h2>
-        <div class="contact-info">
-            <a href="https://www.linkedin.com/in/alexandros-tsimpoukis-a0b58698/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/aelalex/" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-        </div>
-    </header>
-
-    <div class="content">
-        <section id="summary">
-            <h3><i class="fa-solid fa-user-tie"></i> Professional Summary</h3>
-            <ul>
-                <li>R&D Engineer with 8+ years of experience in energy systems and computational fluid dynamics.</li>
-                <li>Skilled in developing high-performance computational codes (FORTRAN, Python, MATLAB) and conducting advanced simulations.</li>
-                <li>Published 10+ peer-reviewed articles, including 7 as first author.</li>
-                <li>Coordinated technical activities for EU Horizon projects, utilizing engineering methodologies and advanced technologies to enhance energy systems' performance.</li>
-                <li>Proficient in thermal systems, renewable energy design, and energy efficiency in buildings.</li>
-            </ul>
-        </section>
-
-        <section id="experience">
-            <h3><i class="fa-solid fa-briefcase"></i> Employment History</h3>
+    
+    <section id="portfolio">
+        <h3>Featured Research & Engineering Projects</h3>
+        <div class="portfolio-grid">
             
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Research Associate</div>
-                    <div class="entry-date">05/2023 – Present</div>
-                </div>
-                <div class="entry-subtitle">CPERI, CERTH, Athens, Greece</div>
+            <div class="project-card">
+                <i class="fa-solid fa-temperature-half"></i>
+                <h4>Advanced Thermal Storage Systems</h4>
+                <p>Contributing to major EU Horizon projects (MINISTOR, THUMBSUP, RE-WITCH) to unlock grid balancing potential and optimize industrial waste heat.</p>
                 <ul>
                     <li>Modelling of a novel thermal storage system in ASPEN and MATLAB/SIMULINK.</li>
-                    <li>Performed BIM and process modeling using TRNSYS to design sustainable energy solutions.</li>
-                    <li>Conducted waste heat analysis for a biogas plant, identifying recovery potential to enhance energy efficiency by 20%.</li>
                     <li>Developed thermodynamic and dynamic models for absorption chillers and thermal storage using MATLAB, maximizing operational reliability by 10%.</li>
-                    <li>Utilized RETSCREEN to design and analyze municipal buildings, converting them into positive energy buildings.</li>
-                    <li>Processed and analyzed energy consumption data for use in an in-house LCA software to assess environmental and sustainability impacts.</li>
+                    <li>Conducted waste heat analysis for a biogas plant, identifying recovery potential to enhance energy efficiency by 20%.</li>
                 </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">MATLAB/SIMULINK</span>
+                    <span class="tech-tag">ASPEN</span>
+                    <span class="tech-tag">TRNSYS</span>
+                </div>
             </div>
 
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Freelance Consultant for Energy and Mechanical Engineering projects</div>
-                    <div class="entry-date">05/2014 – Present</div>
-                </div>
-                <ul>
-                    <li>Provided consultant services for the Greek Ministry of Environment and Energy regarding the Energy Efficiency Directive.</li>
-                    <li>CAD Drawings with AutoCAD.</li>
-                    <li>Energy design and analysis of buildings with 4M-KENAK.</li>
-                    <li>HVAC applications with 4M ADAPT- FINE.</li>
-                </ul>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Research Associate</div>
-                    <div class="entry-date">09/2021 – 04/2023</div>
-                </div>
-                <div class="entry-subtitle">INRASTES, NCSR Demokritos, Greece</div>
+            <div class="project-card">
+                <i class="fa-solid fa-wind"></i>
+                <h4>Computational Fluid Dynamics (CFD)</h4>
+                <p>Developing and optimizing kinetic codes applied to microfluidics, rarefied gas dynamics, and vascular therapies (MAGNA project).</p>
                 <ul>
                     <li>Development of an in-house computational fluid particle dynamics code.</li>
                     <li>Simulation of aerosol flows with ANSYS FLUENT.</li>
                     <li>Simulation of magnetic nanocarriers dispersion within blood flow for intravascular drug delivery.</li>
-                    <li>Python scripts for pre- and post-processing data.</li>
-                    <li>Assistance in writing research proposals.</li>
                 </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">FORTRAN</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">ANSYS FLUENT</span>
+                    <span class="tech-tag">COMSOL</span>
+                </div>
             </div>
 
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Postdoc Researcher</div>
-                    <div class="entry-date">04/2020 – 08/2021</div>
-                </div>
-                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece</div>
+            <div class="project-card">
+                <i class="fa-solid fa-city"></i>
+                <h4>Sustainable Urban Energy Design</h4>
+                <p>Driving positive energy and resilient city initiatives through the RESPONSE EU Horizon project and municipal design.</p>
                 <ul>
-                    <li>Modelling microfluidics flows with in-house kinetic codes.</li>
-                    <li>Simulation of the oscillatory gas flow in comb finger blocks with COMSOL.</li>
-                    <li>Modelling the performance of a solar adsorption chiller with an in-house MATLAB code.</li>
-                    <li>Supervision of 2 postgraduate and 3 undergraduate students.</li>
+                    <li>Utilized RETSCREEN to design and analyze municipal buildings, converting them into positive energy buildings.</li>
+                    <li>Performed BIM and process modeling using TRNSYS to design sustainable energy solutions.</li>
+                    <li>Processed and analyzed energy consumption data for use in an in-house LCA software to assess environmental and sustainability impacts.</li>
                 </ul>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">PhD Candidate</div>
-                    <div class="entry-date">2016 – 03/2020</div>
-                </div>
-                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece</div>
-                <ul>
-                    <li>Development of deterministic (DVM) and stochastic (DSMC) kinetic codes applied in rarefied gas dynamics.</li>
-                    <li>Development, debugging and profiling of parallel codes for high-performance computer (HPC) systems using MPI or OpenMP.</li>
-                    <li>Data visualization with TECPLOT and MATLAB.</li>
-                    <li>Analytical solutions in fluid dynamics with Mathematica and MATLAB</li>
-                    <li>Supervision of 3 postgraduate and 2 undergraduate students.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="education">
-            <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-            
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Ph.D. in Computational Fluid Dynamics</div>
-                    <div class="entry-date">2016 – 2020</div>
-                </div>
-                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece</div>
-                <p><strong>Thesis title:</strong> <em>Rarefied oscillatory and pulsatile gas flows in capillaries and enclosures with applications in vacuum technology and microfluidics</em>.</p>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">M.Sc. in Mechanical Engineering (ECTS: 60)</div>
-                    <div class="entry-date">2014 – 2015</div>
-                </div>
-                <div class="entry-subtitle">Department of Mechanical Engineering, University of Thessaly, Greece</div>
-                <p><strong>Thesis title:</strong> <em>Numerical investigation of the shock wave structure with kinetic and continuum models</em>.</p>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Diploma in Mechanical Engineering (ECTS: 300)</div>
-                    <div class="entry-date">2008 – 2014</div>
-                </div>
-                <div class="entry-subtitle">Department of Mechanical Engineering, Aristotle University of Thessaloniki, Greece</div>
-                  <p><strong>Thesis title:</strong> <em>Calculation of Heating and Cooling Degree-days from records of meteorological stations in the greater metropolitan area of Thessaloniki</em>.</p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h3><i class="fa-solid fa-code"></i> Technical Skills</h3>
-            
-            <div class="skills-group">
-                <strong>Programming</strong>
-                <div class="tags">
-                    <span class="tag">FORTRAN</span>
-                    <span class="tag">MATLAB</span>
-                    <span class="tag">PYTHON</span>
-                </div>
-            </div>
-            
-            <div class="skills-group">
-                <strong>Parallel Programming</strong>
-                <div class="tags">
-                    <span class="tag">MPI</span>
-                    <span class="tag">OPENMP</span>
-                    <span class="tag">OPENACC</span>
+                <div class="tech-stack">
+                    <span class="tech-tag">RETSCREEN</span>
+                    <span class="tech-tag">TRNSYS</span>
+                    <span class="tech-tag">LCA Software</span>
+                    <span class="tech-tag">AutoCAD</span>
                 </div>
             </div>
 
-            <div class="skills-group">
-                <strong>Simulation & Modeling</strong>
-                <div class="tags">
-                    <span class="tag">COMSOL Fluid Flow</span>
-                    <span class="tag">TRNSYS</span>
-                    <span class="tag">ANSYS FLUENT</span>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>Technical Arsenal</h3>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h5><i class="fa-solid fa-code"></i> Programming & Scripting</h5>
+                    <div class="tech-stack">
+                        <span class="tech-tag">FORTRAN</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Shell Scripting</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h5><i class="fa-solid fa-microchip"></i> Parallel Computing</h5>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MPI</span>
+                        <span class="tech-tag">OPENMP</span>
+                        <span class="tech-tag">OPENACC</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h5><i class="fa-solid fa-cube"></i> Simulation & CAD</h5>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ANSYS FLUENT</span>
+                        <span class="tech-tag">COMSOL</span>
+                        <span class="tech-tag">TRNSYS</span>
+                        <span class="tech-tag">AutoCAD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h5><i class="fa-solid fa-chart-line"></i> Data & Tools</h5>
+                    <div class="tech-stack">
+                        <span class="tech-tag">TECPLOT360</span>
+                        <span class="tech-tag">Mathematica</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="skills-group">
-                <strong>Applications & Tools</strong>
-                <div class="tags">
-                    <span class="tag">TECPLOT360</span>
-                    <span class="tag">Mathematica</span>
-                    <span class="tag">PostgreSQL</span>
-                    <span class="tag">AutoCAD</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">LaTeX</span>
-                    <span class="tag">Linux Shell Scripting</span>
-                </div>
-            </div>
-            
-            <div class="skills-group">
-                <strong>Languages</strong>
-                <div class="tags">
-                    <span class="tag">Greek (Native)</span>
-                    <span class="tag">English (C2)</span>
-                    <span class="tag">French (B2)</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h3><i class="fa-solid fa-flask"></i> Projects & Grants</h3>
-            <ul>
-                <li><strong>2023 – 2025:</strong> RE-WITCH - Renewable and Waste heat valorisation in Industries via Technologies for Cooling production and energy Harvesting (Grant Agreement No. 101138697)</li>
-                <li><strong>2023 – 2025:</strong> RESPONSE - integRatEd Solutions for POsitive eNergy and reSilient citiEs (Grant Agreement No. 957751).</li>
-                <li><strong>2023 – 2025:</strong> THUMBSUP - THermal energy storage solUtions to optimally Manage BuildingS and Unlock their grid balancing and flexibility Potential (Grant Agreement No. 101096921).</li>
-                <li><strong>2023 – 2025:</strong> MINISTOR - Minimal Size Thermal and Electrical Energy Storage System for In-Situ Residential Installation (Grant Agreement No. 869821).</li>
-                <li><strong>2022 – 2023:</strong> Rational design of novel magnetic nanocarriers for targeted vascular therapies (MAGNA).</li>
-                <li><strong>2021 – 2022:</strong> Development and Implementation of a Sustainable Modelling Platform for NanoInformatics (H2020-NMBP-14-2018-814426).</li>
-                <li><strong>2016 – 2021:</strong> EUROfusion - European Fusion Project (Grant Agreement No. 633053).</li>
-            </ul>
-        </section>
-
-        <section id="publications">
-            <h3><i class="fa-solid fa-book-open"></i> Selected Publications</h3>
-            
-            <div class="publication">
+    <section id="publications">
+        <h3>Selected Publications</h3>
+        <div class="pub-list">
+            <div class="pub-item">
                 <strong>Optimizing the performance of a novel compact integrated thermal storage system (MiniStor) under diverse climate conditions</strong><br>
-                <em>Alexandros Tsimpoukis, Georgios Martinopoulos, Nikolaos Nikolopoulos</em> | Green Energy and Sustainability (2025).
+                <span style="color: var(--text-muted); font-size: 0.9rem;">Green Energy and Sustainability (2025)</span>
             </div>
-
-            <div class="publication">
+            <div class="pub-item">
                 <strong>A Comprehensive Approach to Nearly Zero Energy Buildings and Districts: Analysis of a Region Undergoing Energy Transition</strong><br>
-                <em>Georgios Martinopoulos, Alexandros Tsimpoukis, et al.</em> | Energies (2024).
+                <span style="color: var(--text-muted); font-size: 0.9rem;">Energies (2024)</span>
             </div>
-
-            <div class="publication">
+            <div class="pub-item">
                 <strong>Linear harmonic oscillatory rarefied gas flow with arbitrary frequency in comb finger blocks</strong><br>
-                <em>Alexandros Tsimpoukis and Dimitris Valougeorgis</em> | Sensors and Actuators A: Physical (2021).
+                <span style="color: var(--text-muted); font-size: 0.9rem;">Sensors and Actuators A: Physical (2021)</span>
             </div>
-
-            <div class="publication">
+            <div class="pub-item">
                 <strong>Oscillatory pressure-driven rarefied binary gas mixture flow between parallel plates</strong><br>
-                <em>Alexandros Tsimpoukis, Steryios Naris, Dimitris Valougeorgis</em> | Physical Review E (2021).
+                <span style="color: var(--text-muted); font-size: 0.9rem;">Physical Review E (2021)</span>
             </div>
+        </div>
+    </section>
 
-            <div class="publication">
-                <strong>Performance optimization of a solar adsorption chiller by dynamically adjusting the half-cycle time</strong><br>
-                <em>Thanasis Basdanis, Alexandros Tsimpoukis, Dimitris Valougeorgis</em> | Renewable Energy (2021).
-            </div>
-            
-            <p><em>Note: This is a selection of journal articles. For a full list of over 10 peer-reviewed journal articles and numerous conference proceedings, please refer to my full academic profile[cite: 3].</em></p>
-        </section>
+    <section id="background">
+        <h3>Academic Background</h3>
+        <div style="text-align: center; max-width: 700px; margin: 0 auto; color: var(--text-muted);">
+            <p><strong>Ph.D. in Computational Fluid Dynamics</strong><br>University of Thessaly, Greece (2016 – 2020)</p>
+            <p><strong>M.Sc. in Mechanical Engineering</strong><br>University of Thessaly, Greece (2014 – 2015)</p>
+            <p><strong>Diploma in Mechanical Engineering</strong><br>Aristotle University of Thessaloniki, Greece (2008 – 2014)</p>
+        </div>
+    </section>
 
-        <section id="miscellaneous">
-            <h3><i class="fa-solid fa-award"></i> Awards & Teaching Experience</h3>
-            <ul>
-                <li><strong>Award (2019):</strong> IUVSTA – Elsevier Student Award. 21st International Vacuum Congress, Malmo, Sweden.</li>
-                <li><strong>Teaching (2023-2024):</strong> Energy and Climate Change, MSc Energy and Finance, International Hellenic University.</li>
-                <li><strong>Teaching Assistant (2017-2023):</strong> Solar Thermal Systems (MATLAB & TRNSYS support, tutorial design).</li>
-                <li><strong>Teaching Assistant:</strong> Introduction to Computer Programming (2018), Numerical Methods (2016).</li>
-            </ul>
-        </section>
-
-    </div>
 </div>
 
 </body>

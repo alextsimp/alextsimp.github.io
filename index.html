@@ -3,87 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandros Tsimpoukis, Ph.D. | R&D Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Alexandros Tsimpoukis | R&D Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <style>
-        body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; background-color: #fcfcfc; }
-        .sidebar { background-color: #f1f5f9; border-right: 1px solid #e2e8f0; }
-        .pub-card { border-left: 3px solid #3b82f6; padding-left: 1rem; margin-bottom: 1.5rem; }
-        .tag { background: #e2e8f0; color: #475569; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+        :root { --text: #2c3e50; --link: #0056b3; --bg: #ffffff; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        header { border-bottom: 2px solid #eee; padding-bottom: 2rem; margin-bottom: 3rem; }
+        h1 { font-size: 2.2rem; margin: 0; color: #000; }
+        h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em; color: #888; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; margin-top: 3rem; }
+        .grid { display: grid; grid-template-columns: 250px 1fr; gap: 4rem; }
+        .sidebar { font-size: 0.9rem; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { margin-bottom: 0.5rem; }
+        .sidebar a { color: var(--link); text-decoration: none; }
+        .sidebar a:hover { text-decoration: underline; }
+        .content section { margin-bottom: 2.5rem; }
+        .pub-item { margin-bottom: 1.5rem; font-size: 0.95rem; }
+        .pub-title { font-weight: 600; display: block; color: #000; }
+        .pub-meta { color: #555; font-size: 0.9rem; }
+        .tag-box { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+        .tag { background: #f0f0f0; padding: 2px 8px; border-radius: 3px; font-size: 0.8rem; font-family: monospace; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .sidebar { order: 2; } .content { order: 1; } }
     </style>
 </head>
-<body class="flex flex-col md:flex-row min-h-screen">
+<body>
 
-    <aside class="sidebar w-full md:w-72 p-8 flex flex-col gap-6">
-        <div>
-            <h1 class="text-2xl font-bold tracking-tight text-slate-900">Alexandros Tsimpoukis, Ph.D.</h1>
-            <p class="text-blue-600 font-medium mt-1">R&D Engineer | Energy Systems</p>
-        </div>
+<header>
+    <h1>Alexandros Tsimpoukis</h1>
+    <p style="font-size: 1.2rem; color: #555;">Ph.D. in Computational Fluid Dynamics & R&D Engineer</p>
+    <div style="font-size: 0.9rem; margin-top: 1rem;">
+        <a href="mailto:test@gmail.com" style="margin-right: 15px; color: var(--link);">Email</a>
+        <a href="https://github.com/aelalex/" style="margin-right: 15px; color: var(--link);">GitHub</a>
+        <a href="https://www.linkedin.com/in/alexandros-tsimpoukis-a0b58698/" style="color: var(--link);">LinkedIn</a>
+    </div>
+</header>
+
+<div class="grid">
+    <aside class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#experience">Employment</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">EU Projects</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+        </ul>
+
+        <h2>Education</h2>
+        <p><strong>Ph.D. CFD</strong><br>U. of Thessaly [cite: 27]</p>
+        <p><strong>M.Sc. Mech. Eng.</strong><br>U. of Thessaly [cite: 28]</p>
         
-        <nav class="flex flex-col gap-3 text-slate-600 font-medium">
-            <a href="#about" class="hover:text-blue-600">About</a>
-            <a href="#experience" class="hover:text-blue-600">Experience</a>
-            <a href="#publications" class="hover:text-blue-600">Publications</a>
-            <a href="#skills" class="hover:text-blue-600">Tech Stack</a>
-        </nav>
-
-        <div class="space-y-2 text-sm text-slate-500 pt-6 border-t border-slate-200">
-            <p>📍 Athens, Greece</p>
-            <a href="https://github.com/alextsimp/" class="block hover:text-blue-600 text-blue-500 underline">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/alexandros-tsimpoukis-a0b58698/" class="block hover:text-blue-600 text-blue-500 underline">LinkedIn</a>
-        </div>
+        <h2>Contact</h2>
+        <p>CPERI, CERTH<br>Athens, Greece [cite: 13]</p>
     </aside>
 
-    <main class="flex-1 max-w-4xl p-8 md:p-16 space-y-16">
-        
-        <section id="about" class="space-y-4">
-            <h2 class="text-xs uppercase tracking-widest text-slate-400 font-bold">Summary</h2>
-            <p class="text-xl leading-relaxed text-slate-700">
-                R&D Engineer with <strong>8+ years of experience</strong> in energy systems and computational fluid dynamics[cite: 1]. 
-                I specialize in developing high-performance computational codes in <strong>FORTRAN, Python, and MATLAB</strong> to solve complex thermal and fluid problems[cite: 2, 8].
-            </p>
+    <main class="content">
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>R&D Engineer with 8+ years of experience in energy systems and computational fluid dynamics[cite: 1]. I specialize in developing high-performance computational codes (FORTRAN, Python, MATLAB) and conducting advanced simulations[cite: 2]. Author of 10+ peer-reviewed articles, including 7 as first author[cite: 3].</p>
         </section>
 
-        <section id="experience" class="space-y-8">
-            <h2 class="text-xs uppercase tracking-widest text-slate-400 font-bold">Current Research</h2>
-            <div class="space-y-6">
-                <div>
-                    <h3 class="text-lg font-bold text-slate-900">Research Associate | CPERI, CERTH</h3>
-                    <p class="text-sm text-slate-500 mb-2">05/2023 — Present</p>
-                    <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
-                        <li>Developed thermodynamic models for absorption chillers and thermal storage using <strong>MATLAB</strong>, increasing operational reliability by <strong>10%</strong>[cite: 16].</li>
-                        <li>Conducted waste heat analysis for biogas plants, identifying recovery potential to enhance energy efficiency by <strong>20%</strong>[cite: 15].</li>
-                        <li>Coordinating technical activities for <strong>EU Horizon projects</strong> including RE-WITCH and THUMBSUP[cite: 4, 47].</li>
-                    </ul>
-                </div>
+        <section id="experience">
+            <h2>Employment History</h2>
+            <div class="pub-item">
+                <strong>Research Associate @ CPERI, CERTH</strong> (2023 – Present) [cite: 13]
+                <p>Modelling of novel thermal storage systems and waste heat analysis for biogas plants[cite: 14, 15]. Developed thermodynamic models for absorption chillers using MATLAB, maximizing reliability by 10%[cite: 16].</p>
+            </div>
+            <div class="pub-item">
+                <strong>Research Associate @ NCSR Demokritos</strong> (2021 – 2023) [cite: 20]
+                <p>Development of in-house computational fluid particle dynamics code and simulation of aerosol flows[cite: 21].</p>
+            </div>
+            <div class="pub-item">
+                <strong>Freelance Consultant</strong> (2014 – Present) [cite: 19]
+                <p>Consultant for the Greek Ministry of Environment and Energy regarding the Energy Efficiency Directive[cite: 19].</p>
             </div>
         </section>
 
-        <section id="publications" class="space-y-6">
-            <h2 class="text-xs uppercase tracking-widest text-slate-400 font-bold">Selected Publications</h2>
-            <div class="pub-card">
-                <h4 class="font-bold text-slate-800">Optimizing the performance of a novel compact integrated thermal storage system (MiniStor)</h4>
-                <p class="text-sm text-slate-500 italic">Green Energy and Sustainability (2025)</p>
-                <p class="text-sm text-slate-600 mt-1">Analyzed replication potential across Europe, showing RES integration coverage ranging from 32% to 88%[cite: 104, 105].</p>
+        <section id="publications">
+            <h2>Journal Articles</h2>
+            <div class="pub-item">
+                <span class="pub-title">Optimizing the performance of a novel compact integrated thermal storage system (MiniStor) under diverse climate conditions</span>
+                <span class="pub-meta">A. Tsimpoukis, G. Martinopoulos, N. Nikolopoulos. <em>Green Energy and Sustainability</em> (2025). [cite: 105]</span>
             </div>
-            <div class="pub-card">
-                <h4 class="font-bold text-slate-800">Linear harmonic oscillatory rarefied gas flow in comb finger blocks</h4>
-                <p class="text-sm text-slate-500 italic">Sensors and Actuators A: Physical (2021)</p>
-                <p class="text-sm text-slate-600 mt-1">Computational specification of damping force minimization in new generation MEMS devices[cite: 58, 59].</p>
+            <div class="pub-item">
+                <span class="pub-title">Linear harmonic oscillatory rarefied gas flow with arbitrary frequency in comb finger blocks</span>
+                <span class="pub-meta">A. Tsimpoukis, D. Valougeorgis. <em>Sensors and Actuators A: Physical</em> (2021). [cite: 58, 59]</span>
             </div>
-        </section>
-
-        <section id="skills" class="space-y-6">
-            <h2 class="text-xs uppercase tracking-widest text-slate-400 font-bold">Technical Skills</h2>
-            <div class="flex flex-wrap gap-2">
-                <span class="tag">FORTRAN</span> <span class="tag">Python</span> <span class="tag">MATLAB</span>
-                <span class="tag">MPI</span> <span class="tag">OpenMP</span> <span class="tag">OpenACC</span>
-                <span class="tag">ANSYS Fluent</span> <span class="tag">COMSOL</span> <span class="tag">TRNSYS</span>
-                <span class="tag">PostgreSQL</span> <span class="tag">Linux/Shell</span> <span class="tag">Git</span>
+            <div class="pub-item">
+                <span class="pub-title">Performance optimization of a solar adsorption chiller by dynamically adjusting the half-cycle time</span>
+                <span class="pub-meta">T. Basdanis, A. Tsimpoukis, D. Valougeorgis. <em>Renewable Energy</em> (2021). [cite: 70]</span>
             </div>
         </section>
 
+        <section id="projects">
+            <h2>Active EU Projects</h2>
+            <p>Coordinated technical activities for EU Horizon projects[cite: 4]:</p>
+            <ul style="padding-left: 20px;">
+                <li><strong>RE-WITCH</strong> (Grant No. 101138697) [cite: 47]</li>
+                <li><strong>THUMBSUP</strong> (Grant No. 101096921) [cite: 47]</li>
+                <li><strong>MINISTOR</strong> (Grant No. 869821) [cite: 47]</li>
+                <li><strong>EUROfusion</strong> (Grant No. 633053) [cite: 48]</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="tag-box">
+                <span class="tag">FORTRAN</span><span class="tag">MATLAB</span><span class="tag">PYTHON</span><span class="tag">MPI</span><span class="tag">OPENMP</span><span class="tag">OPENACC</span><span class="tag">COMSOL</span><span class="tag">TRNSYS</span><span class="tag">ANSYS FLUENT</span><span class="tag">LINUX</span>
+            </div>
+        </section>
     </main>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,51 @@
+journals:
+  - year: 2025
+    title: "Optimizing the performance of a novel compact integrated thermal storage system (MiniStor) under diverse climate conditions"
+    authors: "<strong>A. Tsimpoukis</strong>, G. Martinopoulos, N. Nikolopoulos"
+    journal: "Green Energy and Sustainability"
+  - year: 2025
+    title: "Analysis of a hybrid heating system with TRNSYS: district heating, heat pumps and photovoltaics in a multi-apartment building"
+    authors: "G. Dogkas, <strong>A. Tsimpoukis</strong>, G. Itskos, et al."
+    journal: "Energy and Buildings"
+  - year: 2024
+    title: "A Comprehensive Approach to Nearly Zero Energy Buildings and Districts: Analysis of a Region Undergoing Energy Transition"
+    authors: "G. Martinopoulos, <strong>A. Tsimpoukis</strong>, V. Sougkakis, et al."
+    journal: "Energies"
+  - year: 2021
+    title: "Linear harmonic oscillatory rarefied gas flow with arbitrary frequency in comb finger blocks"
+    authors: "<strong>A. Tsimpoukis</strong>, D. Valougeorgis"
+    journal: "Sensors and Actuators A: Physical"
+  - year: 2021
+    title: "Oscillatory pressure-driven rarefied binary gas mixture flow between parallel plates"
+    authors: "<strong>A. Tsimpoukis</strong>, S. Naris, D. Valougeorgis"
+    journal: "Physical Review E"
+  - year: 2021
+    title: "Performance optimization of a solar adsorption chiller by dynamically adjusting the half-cycle time"
+    authors: "T. Basdanis, <strong>A. Tsimpoukis</strong>, D. Valougeorgis"
+    journal: "Renewable Energy"
+  - year: 2019
+    title: "Nonlinear oscillatory fully-developed rarefied gas flow in plane geometry"
+    authors: "<strong>A. Tsimpoukis</strong>, N. Vasileiadis, G. Tatsios, D. Valougeorgis"
+    journal: "Physics of Fluids"
+  - year: 2018
+    title: "Pulsatile pressure driven rarefied gas flow in long rectangular ducts"
+    authors: "<strong>A. Tsimpoukis</strong>, D. Valougeorgis"
+    journal: "Physics of Fluids"
+
+conferences:
+  - year: 2024
+    title: "Sizing an Electrical Storage in Combination with Thermochemical Storage for a PVT-Driven Energy System in a Residential Application"
+    authors: "A. Coca-Ortegón, R. Simón-Allué, ..., <strong>A. Tsimpoukis</strong>, et al."
+    journal: "EuroSun 2024, Limassol, Cyprus"
+  - year: 2024
+    title: "Analysis of a novel compact integrated thermal energy storage system (MiniStor) in European sites"
+    authors: "<strong>A. Tsimpoukis</strong>, G. Martinopoulos, N. Nikolopoulos"
+    journal: "12th International Conference on Improving Energy Efficiency in Commercial Buildings, Frankfurt"
+  - year: 2023
+    title: "Simulation of Medical Nanoparticle Deposition in an In-Vitro Setup"
+    authors: "<strong>A. Tsimpoukis</strong>, I. Cicha, P. Neofytou"
+    journal: "19th Multiphase Flow Conference & Short Course, Dresden"
+  - year: 2023
+    title: "Gas separation in oscillatory rarefied binary gas flows in long capillaries"
+    authors: "<strong>A. Tsimpoukis</strong>, S. Naris, D. Valougeorgis"
+    journal: "4th European Conference on Non-Equilibrium Gas Flows, Eindhoven"

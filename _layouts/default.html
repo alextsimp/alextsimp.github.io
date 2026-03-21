@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+
+<div class="layout">
+    <div class="sidebar">
+        <div>
+            <h1>Alexandros Tsimpoukis, Ph.D.</h1>
+            <h2>Senior Energy Modeller and Software Engineer</h2>
+            <p>I build high-performance computational codes to enhance energy systems' performance.</p>
+            
+            <ul class="nav-links">
+                <li><a href="{{ site.baseurl }}/#about">About</a></li>
+                <li><a href="{{ site.baseurl }}/#experience">Experience</a></li>
+                <li><a href="{{ site.baseurl }}/#projects">EU Projects</a></li>
+                <li><a href="{{ site.baseurl }}/#publications">Publications</a></li>
+            </ul>
+        </div>
+        
+        <div class="socials">
+            <a href="https://github.com/alextsimp/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/alexandros-tsimpoukis-a0b58698/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="content">
+        {{ content }}
+    </div>
+</div>
+
+</body>
+</html>

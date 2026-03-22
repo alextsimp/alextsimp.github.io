@@ -25,6 +25,8 @@ jobs:
           pip install scholarly PyYAML
 
       - name: Run scholar update script
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
         run: python scripts/scholar_update.py
 
       - name: Commit and push if changes

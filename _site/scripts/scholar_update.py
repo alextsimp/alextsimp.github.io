@@ -1,25 +1,9 @@
 import yaml
-import os
 from scholarly import scholarly
-from scholarly.proxies import ScraperAPI
-
-# --- ScraperAPI Proxy Setup ---
-# Get the API key from the environment variable
-api_key = os.environ.get('SCRAPER_API_KEY')
-if not api_key:
-    print("Error: SCRAPER_API_KEY environment variable not set.")
-    exit(1)
-
-# Set up the proxy generator
-print("Setting up ScraperAPI as the proxy...")
-scraper = ScraperAPI(api_key)
-scholarly.use_proxy(scraper)
-# --- End Proxy Setup ---
 
 # The user ID from the Google Scholar URL
 scholar_id = '4jir8zYAAAAJ'
 output_file = '_data/publications.yml'
-
 
 def get_scholar_publications():
     """Fetches publications from Google Scholar and returns them."""

@@ -10,22 +10,28 @@ def get_scholar_publications():
     print(f"Fetching publications for author ID: {scholar_id}")
     author = scholarly.search_author_id(scholar_id)
     author = scholarly.fill(author, sections=['publications'])
+    
+    # Fill each publication with its details, including abstract and URL
+    for i, pub in enumerate(author['publications']):
+        print(f"Fetching details for publication {i+1}/{len(author['publications'])}: {pub['bib']['title']}")
+        try:
+            scholarly.fill(pub)
+        except Exception as e:
+            print(f"  - Could not fetch details for this publication. Error: {e}")
+
     print(f"Found {len(author['publications'])} publications.")
     return author['publications']
 
 def format_publications(publications):
     """Formats the raw publication data into the desired YAML structure."""
     
-    # Using a list to store publications first to avoid duplicates
     pub_list = []
     for pub in publications:
         try:
             bib = pub.get('bib', {})
-            # Skip publications that don't have a title
             if not bib.get('title'):
                 continue
 
-            # Default to 'journal' type if not specified
             pub_type = pub.get('container_type', 'journal').lower()
 
             pub_list.append({
@@ -33,21 +39,20 @@ def format_publications(publications):
                 'year': bib.get('pub_year', 'N/A'),
                 'title': bib.get('title', 'No Title'),
                 'authors': bib.get('author', 'N/A'),
-                'journal': bib.get('venue', bib.get('booktitle', 'N/A'))
+                'journal': bib.get('venue', bib.get('booktitle', 'N/A')),
+                'url': pub.get('pub_url', '#'),
+                'abstract': bib.get('abstract', 'No abstract available.')
             })
         except Exception as e:
-            print(f"Skipping a publication due to an error: {e}")
+            print(f"Skipping a publication due to a formatting error: {e}")
 
-    # Sort publications by year, descending
     pub_list.sort(key=lambda x: str(x['year']), reverse=True)
 
-    # Separate into journals and conferences
     formatted_data = {
         'journals': [p for p in pub_list if p['type'] == 'journal'],
         'conferences': [p for p in pub_list if p['type'] == 'conference']
     }
 
-    # Remove the 'type' key as it's no longer needed
     for pub in formatted_data['journals']:
         del pub['type']
     for pub in formatted_data['conferences']:

@@ -8,12 +8,12 @@ title: Home
     <p>I actively coordinate technical activities for EU Horizon projects and am a published author of 14 peer-reviewed articles, including 8 as first author. From modelling applied energy systems to global energy systems, my focus remains on utilizing modelling methodologies to drive positive environmental impacts.</p>
 </section>
 
-<section id="research">
+<section>
 <h3>🔬 Research & Engineering Portfolio</h3>
 
 <!-- <p class="intro-text">A transition from deep academic Computational Fluid Dynamics (CFD) research to applied energy engineering and industrial decarbonization.</p> -->
 
-<h4 class="category-title">Global Integrated Assessment Models</h4>
+<h4 id="global-integrated-assessment-models" class="category-title">Global Integrated Assessment Models</h4>
 
 <div class="card">
     <div class="card-header">05/2025 — Present</div>
@@ -34,114 +34,94 @@ title: Home
     </div>
 </div>
 
-    <h4 class="category-title">Applied Energy Systems &amp; Industrial Decarbonization</h4>
+<h4 id="applied-energy-systems-sustainability" class="category-title">Applied Energy Systems &amp; Sustainability</h4>
 
-    <div class="card">
-        <div class="card-header">01/2024 — 05/2025</div>
-        <div class="card-title">Renewable and Waste Heat Valorization <span>@ CERTH</span></div>
-        <div class="card-desc">
-        <ul>
-            <li><strong>Test</strong></li>
-         </ul>
-        </div>
-        <div class="tags">
-            <span class="tag">RE-WITCH</span>
-            <span class="tag">Waste Heat Recovery</span>
-            <span class="tag">Decarbonization</span>
-        </div>
+<div class="card">
+    <div class="card-header">01/2024 — 05/2025</div>
+    <div class="card-title">Renewable and Waste Heat Valorization <span>@ CERTH</span></div>
+    <div class="card-desc">
+    <ul>
+        <li><strong>Test</strong></li>
+        </ul>
     </div>
-
-    <div class="card">
-        <div class="card-header">05/2023 — 05/2025</div>
-        <div class="card-title">MINISTOR &amp; THUMBSUP: Advanced Thermal Storage <span>@ CERTH</span></div>
-        <div class="card-desc">
-        <ul>
-            <li><strong>Test</strong></li>
-         </ul>
+    <div class="tags">
+        <span class="tag">RE-WITCH</span>
+        <span class="tag">Waste Heat Recovery</span>
+        <span class="tag">Industry Decarbonization</span>
     </div>
-        <div class="tags">
-            <span class="tag">Thermal Storage</span>
-            <span class="tag">MATLAB</span>
-            <span class="tag">ASPEN</span>
-            <span class="tag">TRNSYS</span>
-            <span class="tag">MINISTOR</span>
-            <span class="tag">THUMBSUP</span>
-        </div>
+</div>
+
+<div class="card">
+    <div class="card-header">05/2023 — 05/2025</div>
+    <div class="card-title">Applied Energy Systems Modelling<span>@ CERTH</span></div>
+    <div class="card-desc">
+    <ul>
+        <li><strong>Test</strong></li>
+        </ul>
+</div>
+    <div class="tags">
+        <span class="tag">Thermal Storage</span>
+        <span class="tag">MATLAB</span>
+        <span class="tag">ASPEN</span>
+        <span class="tag">TRNSYS</span>
+        <span class="tag">MINISTOR</span>
+        <span class="tag">THUMBSUP</span>
     </div>
+</div>
 
-    <div class="card">
-        <div class="card-header">05/2023 — 05/2025 [cite: 2]</div>
-        <div class="card-title">Sustainable Design for buildings and districts <span>@ CERTH</span></div>
-        <div class="card-desc">
-        <ul>
-            <li><strong>Test</strong></li>
-         </ul>
-        </div>
-        <div class="tags">
-            <span class="tag">RETSCREEN</span>
-            <span class="tag">LCA</span>
-            <span class="tag">Sustainable Design</span>
-
-        </div>
+<div class="card">
+    <div class="card-header">05/2023 — 05/2025</div>
+    <div class="card-title">Energy Efficient Buildings and Districts <span>@ CERTH &amp; @ Freelance Engineer</span></div>
+    <div class="card-desc">
+    <ul>
+        <li><strong>Test</strong></li>
+        </ul>
     </div>
-
-    <h4 class="category-title">High-Performance Computing &amp; Fluid Dynamics</h4>
-
-    <div class="card">
-        <div class="card-header">2016 — 2020</div>
-        <div class="card-title">Kinetic Theory &amp; Rarefied Gas Dynamics <span>@ University of Thessaly</span></div>
-        <div class="card-desc">
-            <li>Developed deterministic (DVM) and stochastic (DSMC) kinetic codes for rarefied gas dynamics applications.</li> 
-            <li>Engineered, debugged, and profiled parallel codes for High-Performance Computing (HPC) environments using MPI and OpenMP.</li> 
-            <li>Investigated oscillatory pressure-driven flows in capillaries and ducts, resulting in multiple first-author publications in Physics of Fluids and Physical Review E.</li>
-        </div>
-        <div class="tags">
-            <span class="tag">FORTRAN</span>
-            <span class="tag">HPC</span>
-            <span class="tag">MPI/OpenMP</span>
-            <span class="tag">Kinetic Modeling</span>
-        </div>
+    <div class="tags">
+        <span class="tag">RETSCREEN</span>
+        <span class="tag">LCA</span>
+        <span class="tag">Sustainable Design</span>
     </div>
+</div>
 
-    <div class="card">
-        <div class="card-header">09/2021 — 04/2023</div>
-        <div class="card-title">Microfluidics &amp; MEMS Simulation <span>@ University of Thessaly</span></div>
-        <div class="card-desc">
-        
-        </div>
-        <div class="tags">
-            <span class="tag">COMSOL</span>
-            <span class="tag">MEMS</span>
-            <span class="tag">Solar Energy</span>
-        </div>
+<div class="card">
+    <div class="card-header">09/2024 — 01/2025</div>
+    <div class="card-title">Degree days for energy efficiency analysis <span>@ Freelance Engineer</span></div>
+    <div class="card-desc">
+    <ul>
+        <li><strong>Test</strong></li>
+        </ul>
     </div>
+    <div class="tags">
+        <span class="tag">Degree-days</span>
+        <span class="tag">Energy Efficiency Directive</span>
+        <span class="tag">Python</span>
+    </div>
+</div>
+<h4 id="high-performance-computing-fluid-dynamics" class="category-title">High-Performance Computing &amp; Fluid Dynamics</h4>
+
+<div class="card">
+    <div class="card-header">2016 — 2023</div>
+    <div class="card-title">Kinetic Theory &amp; Rarefied Gas Dynamics <span>@ University of Thessaly</span></div>
+    <div class="card-desc">
+        <li>Developed deterministic (DVM) and stochastic (DSMC) kinetic codes for rarefied gas dynamics applications.</li> 
+        <li>Modelling microfluidics flows with in-house kinetic codes</li>
+        <li>Engineered, debugged, and profiled parallel codes for High-Performance Computing (HPC) environments using MPI and OpenMP.</li> 
+        <li>Investigated oscillatory pressure-driven flows in capillaries and ducts, resulting in multiple first-author publications in Physics of Fluids and Physical Review E.</li>
+        <li>Data visualization as well as analytical solutions in fluid dynamics</li>
+    </div>
+    <div class="tags">
+        <span class="tag">Computational fluid dynamics</span>
+        <span class="tag">Kinetic Modeling</span>
+        <span class="tag">MEMS</span>
+        <span class="tag">FORTRAN</span>
+        <span class="tag">HPC</span>
+        <span class="tag">MPI/OpenMP</span>
+        <span class="tag">TECPLOT</span>
+        <span class="tag">MATLAB</span>
+        <span class="tag">Mathematica</span>
+    </div>
+</div>
 </section>
     
-<section id="publications">
-    <h3>Selected Publications</h3>
-    
-    <div class="card">
-        <div class="card-header">2025</div>
-        <div class="card-title">Optimizing the performance of a novel compact integrated thermal storage system (MiniStor) under diverse climate conditions</div>
-        <div class="card-desc">Published in Green Energy and Sustainability. Evaluated the MiniStor system which integrates solar PVT, TCM reactors, and heat pumps across various European sites.</div>
-    </div>
 
-    <div class="card">
-        <div class="card-header">2024</div>
-        <div class="card-title">A Comprehensive Approach to Nearly Zero Energy Buildings and Districts: Analysis of a Region Undergoing Energy Transition</div>
-        <div class="card-desc">Published in Energies. Explores the development of positive energy communities using Eordaia, Greece, combining district-level energy analysis to achieve nearly zero energy performance.</div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">2021</div>
-        <div class="card-title">Linear harmonic oscillatory rarefied gas flow with arbitrary frequency in comb finger blocks</div>
-        <div class="card-desc">Published in Sensors and Actuators A: Physical. Investigated linear oscillatory two-dimensional rarefied gas flows in zig-zag channels to minimize damping forces.</div>
-    </div>
-    
-    <div style="margin-top: 30px;">
-        <a href="publications.html" style="color: var(--accent); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size: 1.05rem; transition: transform 0.2s;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">
-            View Full Bibliography <i class="fa-solid fa-arrow-right"></i>
-        </a>
-    </div>
-
-</section>

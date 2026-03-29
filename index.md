@@ -34,6 +34,24 @@ title: Home
     </div>
 </div>
 
+<div class="card">
+    <div class="card-header">05/2025 — Present</div>
+    <div class="card-title">OPEN-PROM: An Open-Source World Energy Model <span>@ E3Modelling/Ricardo plc &amp;@ <a href="https://github.com/e3modelling/OPEN-PROM" target="_blank">GitHub</a></span></div>
+    <div class="card-desc">
+        <ul>
+            <li>OPEN-PROM is a global, multi-regional, energy system model, expanded and used for Integrated Assessment of low-emission strategies.</li>
+            <li>It is useful to support impact analysis and develop climate change mitigation pathways.</li>
+        </ul>
+    </div>
+    <div class="tags">
+        <span class="tag">GAMS</span>
+        <span class="tag">Python</span>
+        <span class="tag">R</span>
+        <span class="tag">Energy Systems Modelling</span>
+        <span class="tag">Open Source</span>
+    </div>
+</div>
+
 <h4 id="applied-energy-systems-sustainability" class="category-title">🌱 Applied Energy Systems &amp; Sustainability</h4>
 
 <div class="card">
@@ -41,7 +59,7 @@ title: Home
     <div class="card-title">Renewable and Waste Heat Valorization <span>@ CERTH</span></div>
     <div class="card-desc">
     <ul>
-        <li><strong>Test</strong></li>
+        <li><strong>To be updated</strong></li>
         </ul>
     </div>
     <div class="tags">
@@ -56,7 +74,7 @@ title: Home
     <div class="card-title">Applied Energy Systems Modelling<span>@ CERTH</span></div>
     <div class="card-desc">
     <ul>
-        <li><strong>Test</strong></li>
+        <li><strong>To be updated</strong></li>
         </ul>
 </div>
     <div class="tags">
@@ -74,7 +92,7 @@ title: Home
     <div class="card-title">Energy Efficient Buildings and Districts <span>@ CERTH &amp; @ Freelance Engineer</span></div>
     <div class="card-desc">
     <ul>
-        <li><strong>Test</strong></li>
+        <li><strong>To be updated</strong></li>
         </ul>
     </div>
     <div class="tags">

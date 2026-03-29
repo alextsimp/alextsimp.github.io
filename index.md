@@ -13,7 +13,7 @@ title: Home
 
 <!-- <p class="intro-text">A transition from deep academic Computational Fluid Dynamics (CFD) research to applied energy engineering and industrial decarbonization.</p> -->
 
-<h4 id="global-integrated-assessment-models" class="category-title">Global Integrated Assessment Models</h4>
+<h4 id="global-integrated-assessment-models" class="category-title">🌍 Global Integrated Assessment Models</h4>
 
 <div class="card">
     <div class="card-header">05/2025 — Present</div>
@@ -34,7 +34,7 @@ title: Home
     </div>
 </div>
 
-<h4 id="applied-energy-systems-sustainability" class="category-title">Applied Energy Systems &amp; Sustainability</h4>
+<h4 id="applied-energy-systems-sustainability" class="category-title">🌱 Applied Energy Systems &amp; Sustainability</h4>
 
 <div class="card">
     <div class="card-header">01/2024 — 05/2025</div>
@@ -86,11 +86,8 @@ title: Home
 
 <div class="card">
     <div class="card-header">09/2024 — 01/2025</div>
-    <div class="card-title">Degree days for energy efficiency analysis <span>@ Freelance Engineer</span></div>
+    <div class="card-title">Develop methodology for assessing and normalizing energy consumption in public buildings using degree‑days (HDD/CDD) and performance lines <span>@ Freelance Engineer</span></div>
     <div class="card-desc">
-    <ul>
-        <li><strong>Test</strong></li>
-        </ul>
     </div>
     <div class="tags">
         <span class="tag">Degree-days</span>
@@ -98,11 +95,24 @@ title: Home
         <span class="tag">Python</span>
     </div>
 </div>
-<h4 id="high-performance-computing-fluid-dynamics" class="category-title">High-Performance Computing &amp; Fluid Dynamics</h4>
+<!-- The methodology uses cleaned monthly consumption data, degree‑day weather indicators, and statistically validated performance‑line regressions to normalize energy use and accurately quantify savings at the building level. -->
+
+<h4 id="high-performance-computing-fluid-dynamics" class="category-title">🚀 High-Performance Computing &amp; Fluid Dynamics</h4>
 
 <div class="card">
     <div class="card-header">2016 — 2023</div>
     <div class="card-title">Kinetic Theory &amp; Rarefied Gas Dynamics <span>@ University of Thessaly</span></div>
+    
+    <div class="card-gallery">
+        <img src="assets/images/rarefiedGasDynamics/Slide0.PNG" alt="Gallery image 1" class="gallery-item">
+        <!-- <img src="assets/images/rarefiedGasDynamics/Slide1.PNG" alt="Gallery image 2" class="gallery-item"> -->
+        <img src="assets/images/rarefiedGasDynamics/Slide3.PNG" alt="Gallery image 3" class="gallery-item">
+        <img src="assets/images/rarefiedGasDynamics/Slide4.PNG" alt="Gallery image 4" class="gallery-item">
+        <img src="assets/images/rarefiedGasDynamics/Slide7.PNG" alt="Gallery image 5" class="gallery-item">
+        <img src="assets/images/rarefiedGasDynamics/Slide8.PNG" alt="Gallery image 6" class="gallery-item">
+        <img src="assets/images/rarefiedGasDynamics/Slide9.PNG" alt="Gallery image 7" class="gallery-item">
+    </div>
+
     <div class="card-desc">
         <li>Developed deterministic (DVM) and stochastic (DSMC) kinetic codes for rarefied gas dynamics applications.</li> 
         <li>Modelling microfluidics flows with in-house kinetic codes</li>

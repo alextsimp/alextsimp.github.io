@@ -80,7 +80,7 @@ title: Home
     <div class="card-header">05/2023 — 05/2025</div>
     <div class="card-title">Energy Efficient Buildings<span>@ CERTH &amp; @ Freelance Engineer</span></div>
     <div class="card-gallery">
-        <img src="{{ '/assets/images/energySystemsBuildings/trnsys.png' | relative_url }}" alt="Gallery image 1" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/trnsys.png" alt="Trnsys 1" class="gallery-item">
     </div>
     <div class="card-desc">
         <ul>

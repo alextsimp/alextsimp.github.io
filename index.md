@@ -52,17 +52,24 @@ title: Home
     </div>
 </div>
 
-<h4 id="applied-energy-systems-sustainability" class="category-title">🌱 Applied Energy Systems &amp; Sustainability</h4>
+<h4 id="applied-energy-systems-sustainability" class="category-title">🌱 Applied Energy Systems &amp; Energy Efficient Buildings</h4>
 
 <div class="card">
-    <div class="card-header">01/2024 — 05/2025</div>
-    <div class="card-title">Renewable and Waste Heat Valorization <span>@ CERTH</span></div>
+    <div class="card-header">05/2023 — 05/2025</div>
+    <div class="card-title">Applied Energy Systems Modelling<span>@ CERTH</span></div>
     <div class="card-desc">
-    <ul>
-        <li><strong>To be updated</strong></li>
+        <ul>
+            <li><strong>Industrial Polygeneration & Waste Heat Recovery:</strong> Simulated a biofuel plant installation (RE-WITCH project) using <strong>MATLAB</strong> to optimize waste heat recovery via Organic Rankine Cycles (ORC) and absorption chillers.</li>
+            <li><strong>Advanced Thermal Energy Storage (TES):</strong> Evaluated diverse storage scenarios, including hot and cold water tanks, achieving increase in cooling production and identifying cost-effective solutions.</li>
+            <li><strong>MiniStor System Optimization:</strong> Optimized dynamic models in <strong>ASPEN Plus Dynamics</strong> and MATLAB/Simulink to assess a compact hybrid storage system integrating thermochemical (TCM) and phase change material (PCM) technologies.</li>
+            <li><strong>Solar Field & HVAC Integration:</strong> Modeled the integration of solar thermal and PVT collectors with building HVAC systems to stabilize intermittent supply and meet residential heating/cooling demands.</li>
         </ul>
     </div>
     <div class="tags">
+        <span class="tag">Thermal Storage</span>
+        <span class="tag">MATLAB</span>
+        <span class="tag">ASPEN</span>
+        <span class="tag">MINISTOR</span>
         <span class="tag">RE-WITCH</span>
         <span class="tag">Waste Heat Recovery</span>
         <span class="tag">Industry Decarbonization</span>
@@ -71,34 +78,26 @@ title: Home
 
 <div class="card">
     <div class="card-header">05/2023 — 05/2025</div>
-    <div class="card-title">Applied Energy Systems Modelling<span>@ CERTH</span></div>
-    <div class="card-desc">
-    <ul>
-        <li><strong>To be updated</strong></li>
-        </ul>
-</div>
-    <div class="tags">
-        <span class="tag">Thermal Storage</span>
-        <span class="tag">MATLAB</span>
-        <span class="tag">ASPEN</span>
-        <span class="tag">TRNSYS</span>
-        <span class="tag">MINISTOR</span>
-        <span class="tag">THUMBSUP</span>
+    <div class="card-title">Energy Efficient Buildings<span>@ CERTH &amp; @ Freelance Engineer</span></div>
+    <div class="card-gallery">
+        <img src="assets/images/energySystemsBuildings/trnsys.png" alt="Gallery image 1" class="gallery-item">
     </div>
-</div>
-
-<div class="card">
-    <div class="card-header">05/2023 — 05/2025</div>
-    <div class="card-title">Energy Efficient Buildings and Districts <span>@ CERTH &amp; @ Freelance Engineer</span></div>
     <div class="card-desc">
-    <ul>
-        <li><strong>To be updated</strong></li>
+        <ul>
+            <li>Engineered dynamic models in <strong>TRNSYS</strong> to evaluate hybrid energy systems (Heat Pumps, District Heating, and PV) for multi-apartment residential blocks.</li>
+            <li>Performed <strong>Life Cycle Analysis (LCA)</strong> and environmental impact assessments using the <strong>VERIFY</strong> platform to quantify CO2 reductions and primary energy usage.</li>
+            <li>Developed a replicable framework for <strong>Positive Energy Districts (PEDs)</strong> and <strong>Nearly Zero Energy Buildings (NZEB)</strong>, achieving up to 55% energetic self-supply in optimized scenarios.</li>
+            <li><strong>Freelance Work:</strong> Doing <strong>BIM</strong> workflows to create detailed building geometries and performed energy calculations for the issuance of <strong>energy performance certificates</strong> using 4M software.</li>
         </ul>
     </div>
     <div class="tags">
         <span class="tag">RETSCREEN</span>
+        <span class="tag">TRNSYS</span>
         <span class="tag">LCA</span>
-        <span class="tag">Sustainable Design</span>
+        <span class="tag">SRI</span>
+        <span class="tag">Building Information Models</span>
+        <span class="tag">THUMBSUP</span>
+        <span class="tag">RESPONSE</span>
     </div>
 </div>
 
@@ -118,7 +117,7 @@ title: Home
 <h4 id="high-performance-computing-fluid-dynamics" class="category-title">🚀 High-Performance Computing &amp; Fluid Dynamics</h4>
 
 <div class="card">
-    <div class="card-header">2016 — 2023</div>
+    <div class="card-header">2016 — 2022</div>
     <div class="card-title">Kinetic Theory &amp; Rarefied Gas Dynamics <span>@ University of Thessaly</span></div>
     
     <div class="card-gallery">
@@ -142,7 +141,7 @@ title: Home
         <span class="tag">Computational fluid dynamics</span>
         <span class="tag">Kinetic Modeling</span>
         <span class="tag">MEMS</span>
-        <span class="tag">FORTRAN</span>
+        <span class="tag">Fortran</span>
         <span class="tag">HPC</span>
         <span class="tag">MPI/OpenMP</span>
         <span class="tag">TECPLOT</span>
@@ -153,3 +152,35 @@ title: Home
 </section>
     
 
+<h4 id="teaching" class="category-title"> Teaching</h4>
+
+<div class="card">
+    <div class="card-header">2023 — 2026</div>
+    <div class="card-title">Energy and Climate Change <span>@ International Hellenic University</span></div>
+    <div class="card-desc">
+    </div>
+    <div class="tags">
+        <span class="tag">Climate data</span>
+        <span class="tag">Climate data store - Copernicus</span>
+        <span class="tag">Energy management</span>
+        <span class="tag">RETSCEEN</span>
+    </div>
+</div>
+</section>
+
+<div class="card">
+    <div class="card-header">2016 — 2023</div>
+    <div class="card-title">Solar Thermal Systems <span>@ University of Thessaly</span></div>
+    <div class="card-desc">
+        <li>Support for software development in MATLAB and running applications with TRNSYS.</li> 
+        <li>Design tutorials, hands-on workshops, and documentation for students.</li>
+        <li>Modelling the performance of a solar adsorption chiller with an in-house MATLAB code.</li> 
+    </div>
+    <div class="tags">
+        <span class="tag">Solar thermal systems</span>
+        <span class="tag">Solar thermal cooling</span>
+        <span class="tag">Adsorption systems</span>
+        <span class="tag">Absorption systems</span>
+    </div>
+</div>
+</section>

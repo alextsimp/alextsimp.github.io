@@ -57,6 +57,11 @@ title: Home
 <div class="card">
     <div class="card-header">05/2023 — 05/2025</div>
     <div class="card-title">Applied Energy Systems Modelling<span>@ CERTH</span></div>
+    <div class="card-gallery">
+        <img src="assets/images/energySystemsBuildings/adsorption.png" alt="Energy System 1" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/ministor.png" alt="Energy System 2" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/wasteHeat.png" alt="Energy System 3" class="gallery-item">
+    </div>
     <div class="card-desc">
         <ul>
             <li><strong>Industrial Polygeneration & Waste Heat Recovery:</strong> Simulated a biofuel plant installation (RE-WITCH project) using <strong>MATLAB</strong> to optimize waste heat recovery via Organic Rankine Cycles (ORC) and absorption chillers.</li>
@@ -80,10 +85,8 @@ title: Home
     <div class="card-header">05/2023 — 05/2025</div>
     <div class="card-title">Energy Efficient Buildings<span>@ CERTH &amp; @ Freelance Engineer</span></div>
     <div class="card-gallery">
-        <img src="assets/images/energySystemsBuildings/trnsys.png" alt="Energy System 1" class="gallery-item">
-        <img src="assets/images/energySystemsBuildings/adsorption.png" alt="Energy System 2" class="gallery-item">
-        <img src="assets/images/energySystemsBuildings/ministor.png" alt="Energy System 3" class="gallery-item">
-        <img src="assets/images/energySystemsBuildings/wasteHeat.png" alt="Energy System 4" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/trnsys.png" alt="Energy Building 1" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/eordaia.png" alt="Energy Building 2" class="gallery-item">
     </div>
     <div class="card-desc">
         <ul>

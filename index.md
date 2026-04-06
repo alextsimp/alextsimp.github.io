@@ -58,9 +58,8 @@ title: Home
     <div class="card-header">05/2023 — 05/2025</div>
     <div class="card-title">Applied Energy Systems Modelling<span>@ CERTH</span></div>
     <div class="card-gallery">
-        <img src="assets/images/energySystemsBuildings/adsorption.png" alt="Energy System 1" class="gallery-item">
-        <img src="assets/images/energySystemsBuildings/ministor.png" alt="Energy System 2" class="gallery-item">
-        <img src="assets/images/energySystemsBuildings/wasteHeat.png" alt="Energy System 3" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/ministor.png" alt="Energy System 1" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/wasteHeat.png" alt="Energy System 2" class="gallery-item">
     </div>
     <div class="card-desc">
         <ul>
@@ -176,6 +175,9 @@ title: Home
 <div class="card">
     <div class="card-header">2016 — 2023</div>
     <div class="card-title">Solar Thermal Systems <span>@ University of Thessaly</span></div>
+    <div class="card-gallery">
+        <img src="assets/images/energySystemsBuildings/adsorption.png" alt="Solar adsorption" class="gallery-item">
+    </div>
     <div class="card-desc">
         <li>Support for software development in MATLAB and running applications with TRNSYS.</li> 
         <li>Design tutorials, hands-on workshops, and documentation for students.</li>

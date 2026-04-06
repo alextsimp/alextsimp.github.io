@@ -80,7 +80,10 @@ title: Home
     <div class="card-header">05/2023 — 05/2025</div>
     <div class="card-title">Energy Efficient Buildings<span>@ CERTH &amp; @ Freelance Engineer</span></div>
     <div class="card-gallery">
-        <img src="assets/images/energySystemsBuildings/trnsys.png" alt="Trnsys 1" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/trnsys.png" alt="Energy System 1" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/adsorption.png" alt="Energy System 2" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/ministor.png" alt="Energy System 3" class="gallery-item">
+        <img src="assets/images/energySystemsBuildings/wasteHeat.png" alt="Energy System 4" class="gallery-item">
     </div>
     <div class="card-desc">
         <ul>
